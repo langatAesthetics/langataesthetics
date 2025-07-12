@@ -1,6 +1,5 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import image from "../assets/Screenshot 2025-04-23 111148.png"
 import { Link } from "react-router-dom";
 
 const About = () => (
@@ -9,7 +8,7 @@ const About = () => (
         <section className=" isolate px-6 lg:px-8 ">
             <div className="container mx-auto p-10 flex flex-col  items-center gap-10">
                 <div className="w-full lg:w-1/2">
-                    <img src={image} alt="About section image" className="w-full h-auto rounded-lg shadow-md"/>
+                    <img src="http://localhost:5173/images/Screenshot%202025-02-01%20103520.png" alt="About section image" className="w-full h-auto rounded-lg shadow-md"/>
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">Who I Am</h2>
