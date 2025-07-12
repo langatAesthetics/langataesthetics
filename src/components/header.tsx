@@ -18,7 +18,7 @@ const Header = () => {
                     <Link to="/tech stack" className="text-sm/6 font-semibold text-gray-900">Tech</Link>
                 </div>
                 <div className=" hidden lg:inline-block">
-                    <a className="text-sm/6 font-semibold text-gray-900">Download Resume</a>
+                    <Link to="/" className="text-sm/6 font-semibold text-gray-900">Download Resume <span aria-hidden="true">→</span></Link>
                 </div>
 
                 {/*Hamburger Button*/}

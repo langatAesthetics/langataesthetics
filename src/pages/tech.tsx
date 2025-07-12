@@ -110,7 +110,7 @@ const Tech = () => (
             <div className="w-full py-10 text-center ">
                 <p className="text-gray-600 text-lg text-center leading-relaxed">
                     I'm a passionate developer who builds modern, responsive web apps with clean code and powerful UI.
-                    I specialize in JavaScript, React, and full-stack solutions that solve real-world problems. <Link to="/" className="text-sm/6 font-semibold text-blue-800">Contact <span aria-hidden="true">→</span></Link>
+                    I specialize in JavaScript, React, and full-stack solutions that solve real-world problems. <Link to="/" className="text-sm/6 font-semibold text-blue-800">Projects <span aria-hidden="true">→</span></Link>
                 </p>
             </div>
         </section>
