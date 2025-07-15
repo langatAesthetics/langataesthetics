@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import { Link } from "react-router-dom";
-import abtimg from "../../public/images/about/Screenshot 2025-02-01 103520.png"
+import abtimg from "../../public/images/about/IMG_20250709_115350~2.jpg"
 
 
 const Home = () => (
