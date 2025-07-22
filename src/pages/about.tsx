@@ -12,7 +12,7 @@ const About = () => (
                     <img src={abtimg} alt="About section image" className="w-full h-auto rounded-lg shadow-md"/>
                 </div>
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
-                    <h2 className="text-2xl font-bold text-center text-gray-900 mb-4">Who I Am</h2>
+                    <h2 className="text-2xl font-bold text-center text-gray-900 mb-4">Duncan Lang'at</h2>
                     <p className="text-gray-600 text-sm/6 text-center leading-relaxed">
                         I'm a passionate developer who builds modern, responsive web apps with clean code and powerful UI.
                         I specialize in JavaScript, React, and full-stack solutions that solve real-world problems. <Link to="/contact form" className="text-sm/6 font-semibold text-blue-800">Contact <span aria-hidden="true">→</span></Link>
