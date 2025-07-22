@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/LangatLogo.svg'
+import logo from '../assets/LangatLogo.svg';
+
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
         <header className=" inset-x-0 top-0 z-50 shadow-md sticky bg-white">
             <nav className="flex items-center justify-between p-4">
                 <div>
-                    <Link to="/"><img src={logo} alt="My-logo" /></Link>
+                    <Link to="/"><img className="w-10 h-10" src={logo} alt="My-Logo"/></Link>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     <Link to="/"  className="text-sm/6 font-semibold text-gray-900">Home</Link>
