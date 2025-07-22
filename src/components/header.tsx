@@ -39,7 +39,7 @@ const Header = () => {
                         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                             <div className="flex items-center justify-between">
                                 <Link to="/">
-                                    <img src={logo} alt="My-Logo" />
+                                    <img className="w-10 h-10" src={logo} alt="My-Logo" />
                                 </Link>
                                 <button type="button" onClick={() => setIsOpen(false)} className="-m-2.5 flex rounded-md p-2.5 text-gray-700">
                                     <span className="sr-only">Close menu</span>
