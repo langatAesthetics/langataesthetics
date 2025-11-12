@@ -1,0 +1,37 @@
+// components/Footer.tsx
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-white py-6 mt-12">
+      <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
+        {/* Left */}
+        <div className="mb-4 md:mb-0">
+          &copy; {new Date().getFullYear()} Langat Aesthetics. All rights reserved.
+        </div>
+
+        {/* Right - Social Links */}
+        <div className="flex space-x-6">
+          <a
+            href="https://github.com/langataesthetics"
+            target="_blank"
+            className="hover:text-[#00c707] transition"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/langataesthetics"
+            target="_blank"
+            className="hover:text-[#00c707] transition"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:langataesthetics@example.com"
+            className="hover:text-[#00c707] transition"
+          >
+            Email
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
