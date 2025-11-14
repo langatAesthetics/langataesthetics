@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Projects from "@/components/projects";
@@ -24,6 +25,7 @@ export default function Home() {
             alt="Langat Aesthetics"
             width={400}
             height={400}
+            loading="eager"
             className=" object-cover"
           />
         </div>
@@ -38,6 +40,12 @@ export default function Home() {
 
           <p className="text-lg md:text-xl text-gray-900 mb-6">
             I'm a Frontend Developer. I build modern web applications using Next.js, React, Tailwind CSS.
+            <a
+              href="/Langat_Aesthetics_Resume.pdf"
+              download
+              className="underline text-[#00c707]">
+               Download Resume
+            </a>
           </p>
 
           {/* Social Icons */}
@@ -51,7 +59,7 @@ export default function Home() {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/langataesthetics"
+              href="https://www.linkedin.com/in/langat-aesthetics-671a032b5/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#00c707] transition"
@@ -59,7 +67,7 @@ export default function Home() {
               <Linkedin size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/langataesthetics"
+              href="mailto:langataesthetics@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#00c707] transition"
@@ -71,9 +79,18 @@ export default function Home() {
       </section>
       <section>
         <Projects />
+        {/* CTA Link */}
+        <div className="text-right py-6 px-6 md:px-12">
+          <Link
+            href="/projects"
+            className="text-[#00e20a] font-semibold hover:underline hover:text-[#00c707] transition"
+          >
+            See all projects →
+          </Link>
+        </div>
       </section>
       <section>
-        <Contact/>
+        <Contact />
       </section>
     </main>
   );

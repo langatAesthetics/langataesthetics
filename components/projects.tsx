@@ -8,26 +8,26 @@ export default function Projects() {
       description:
         "A personal portfolio built with Next.js, Tailwind CSS, and Framer Motion — fully responsive and SEO optimized.",
       image: "/images/placeholderimg.jpg",
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      tech: ["Next.js", "Tailwind CSS", "TypeScript"],
     },
     {
-      title: "Crypto Dashboard",
+      title: "Coming Soon Project",
       description:
-        "A real-time crypto tracker displaying live prices, charts, and portfolio balance using CoinGecko API.",
-      image: "/images/placeholderimg.jpg",
-      tech: ["React", "Supabase", "API"],
+        "An upcoming project — stay tuned for something amazing!",
+      image: "/images/placeholder.svg",
+      tech: ["???", "???", "???"],
     },
     {
-      title: "E-Commerce App",
+      title: "Coming Soon Project",
       description:
-        "A full-stack e-commerce platform with product search, cart, and payment integration.",
-      image: "/images/placeholderimg.jpg",
-      tech: ["Next.js", "Stripe", "Supabase"],
+        "An upcoming project — stay tuned for something amazing!",
+      image: "/images/placeholder.svg",
+      tech: ["???", "???", "???"],
     },
   ];
 
   return (
-    <section className="bg-white text-black px-6 md:px-16">
+    <section className="bg-white text-black py-6 px-6 md:px-16">
       <h2 className="text-2xl md:text-3xl font-bold text-[#00e20a] mb-12 text-center">
         Projects
       </h2>
@@ -65,16 +65,6 @@ export default function Projects() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* CTA Link */}
-      <div className="text-right mt-12">
-        <Link
-          href="/projects"
-          className="text-[#00e20a] font-semibold hover:underline hover:text-[#00c707] transition"
-        >
-          See all projects →
-        </Link>
       </div>
     </section>
   );

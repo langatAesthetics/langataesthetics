@@ -18,14 +18,14 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/langataesthetics"
+            href="https://www.linkedin.com/in/langat-aesthetics-671a032b5/"
             target="_blank"
             className="hover:text-[#00c707] transition"
           >
             LinkedIn
           </a>
           <a
-            href="mailto:langataesthetics@example.com"
+            href="mailto:langataesthetics@gmail.com"
             className="hover:text-[#00c707] transition"
           >
             Email
