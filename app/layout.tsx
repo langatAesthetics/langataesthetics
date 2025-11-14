@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Viewport } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -12,8 +13,8 @@ const leagueSpartan = League_Spartan({
 
 export const viewport: Viewport = {
   width: 'device-width',
-  initialScale: 1 ,
-  maximumScale: 5 ,
+  initialScale: 1,
+  maximumScale: 5,
   userScalable: true,
 }
 
@@ -35,9 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <SpeedInsights />
+        <Footer />
       </body>
     </html>
   );
