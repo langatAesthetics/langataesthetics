@@ -8,6 +8,7 @@ import "./globals.css";
 
 const leagueSpartan = League_Spartan({
   variable: "--font-league-spartan",
+  display: "swap",
   subsets: ["latin"],
 });
 

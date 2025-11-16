@@ -1,6 +1,5 @@
-
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const techStacks = [
   "Next.js",
@@ -13,6 +12,17 @@ const techStacks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  // Auto-close dropdown 5 seconds after opening
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (open) {
+      timer = setTimeout(() => {
+        setOpen(false);
+      }, 5000); // 5000ms = 5 seconds
+    }
+    return () => clearTimeout(timer); // cleanup if dropdown closes early
+  }, [open]);
 
   return (
     <header className="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
