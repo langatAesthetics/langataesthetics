@@ -1,9 +1,8 @@
-export const projects = [
+export const portfolio = [
   {
     title: "Personal Website",
     description: "A personal website built with Next.js, Tailwind CSS, and Framer Motion — fully responsive and SEO optimized.",
     image: "/images/placeholder.svg",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
     liveLink: "https://langataesthetics.vercel.app",
     githubLink: "https://github.com/langatAesthetics/langataesthetics",
   },
@@ -11,19 +10,22 @@ export const projects = [
     title: "Coming Soon Project",
     description: "An upcoming project - Stay Tuned!",
     image: "/images/placeholder.svg",
-    tech: ["???", "???", "???"],
+    liveLink: "https://langataesthetics.vercel.app",
+    githubLink: "https://github.com/langatAesthetics/langataesthetics",
   },
    {
     title: "Coming Soon Project",
     description: "An upcoming project - Stay Tuned!",
     image: "/images/placeholder.svg",
-    tech: ["???", "???", "???"],
+    liveLink: "https://langataesthetics.vercel.app",
+    githubLink: "https://github.com/langatAesthetics/langataesthetics",
   },
    {
     title: "Coming Soon Project",
     description: "An upcoming project - Stay Tuned!",
     image: "/images/placeholder.svg",
-    tech: ["???", "???", "???"],
+    liveLink: "https://langataesthetics.vercel.app",
+    githubLink: "https://github.com/langatAesthetics/langataesthetics",
   },
-  // Add more projects here
+  // Add to portfolio here
 ];

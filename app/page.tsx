@@ -25,6 +25,9 @@ export default function Home() {
 
           <p className="text-lg md:text-xl text-gray-900 mb-6">
             I'm a Frontend Developer. I build modern web applications using Next.js, React, and Tailwind CSS.
+            <Link href="/portfolio" className="text-[#00c707] underline font-medium ">
+              Portfolio →
+            </Link>
           </p>
 
           <a
