@@ -7,7 +7,7 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   return (
     <section className="bg-white text-black px-6 md:px-16 py-16">
-      <h2 className="text-2xl md:text-3xl font-bold text-[#00e20a] mb-12 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#142132] mb-12 text-center">
         All Projects
       </h2>
 
@@ -31,7 +31,7 @@ export default function Projects() {
             {/* Project Content */}
             <div className="p-6 flex flex-col">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="text-2xl font-semibold text-[#00e20a]">
+                <h3 className="text-2xl font-semibold text-[#14213d]">
                   {project.title}
                 </h3>
 
@@ -42,7 +42,7 @@ export default function Projects() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-800 hover:text-[#00c707] transition"
+                      className="text-gray-800 hover:text-[#fca311] transition"
                       title="View Live Project"
                     >
                       <ExternalLink size={22} />
@@ -53,7 +53,7 @@ export default function Projects() {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-800 hover:text-[#00c707] transition"
+                      className="text-gray-800 hover:text-[#fca311] transition"
                       title="View GitHub Repo"
                     >
                       <Github size={22} />
@@ -69,7 +69,7 @@ export default function Projects() {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-sm bg-[#00e20a]/10 text-[#00e20a] px-3 py-1 rounded-full"
+                    className="text-sm bg-[#e5e5e5] text-[#14213d] px-3 py-1 rounded-full"
                   >
                     {tech}
                   </span>

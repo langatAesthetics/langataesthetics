@@ -33,7 +33,7 @@ export default function Header() {
       <div className="relative">
         <button
           onClick={() => setOpen(!open)}
-          className="font-medium hover:text-[#00c707] transition"
+          className="font-medium hover:text-[#fca311] transition"
         >
           Tech Stack
         </button>

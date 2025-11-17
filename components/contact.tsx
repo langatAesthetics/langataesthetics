@@ -10,7 +10,7 @@ export default function Contact() {
           method="POST"
           className="w-full md:w-1/2 bg-gray-50 shadow-lg rounded-xl p-8 space-y-4 border border-gray-200"
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-[#00e20a] mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#14213d] mb-4">
             Get In Touch
           </h2>
 
@@ -19,7 +19,7 @@ export default function Contact() {
             name="name"
             placeholder="Your Name"
             required
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00e20a]"
+            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#fca311]"
           />
 
           <input
@@ -27,7 +27,7 @@ export default function Contact() {
             name="email"
             placeholder="Your Email"
             required
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00e20a]"
+            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#fca311]"
           />
 
           <textarea
@@ -35,12 +35,12 @@ export default function Contact() {
             placeholder="Your Message"
             required
             rows={5}
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00e20a]"
+            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#fca311]"
           />
 
           <button
             type="submit"
-            className="w-full px-6 py-3 bg-[#00e20a] text-white font-semibold rounded-lg hover:bg-[#00c707] transition"
+            className="w-full px-6 py-3 bg-[#14213d] text-white font-semibold rounded-lg hover:bg-[#fca311] transition"
           >
             Send Message
           </button>
@@ -48,7 +48,7 @@ export default function Contact() {
 
         {/* Right: Text Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <h2 className="text-3xl font-bold text-[#00e20a] mb-4">
+          <h2 className="text-3xl font-bold text-[#14213d] mb-4">
             Let’s Collaborate
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">
