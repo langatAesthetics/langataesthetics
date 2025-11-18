@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Personal Website",
     description: "A personal website built with Next.js, Tailwind CSS, and Framer Motion — fully responsive and SEO optimized.",
-    image: "/images/placeholder.svg",
+    image: "/images/personalwebsite.jpeg",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
     liveLink: "https://langataesthetics.vercel.app",
     githubLink: "https://github.com/langatAesthetics/langataesthetics",
