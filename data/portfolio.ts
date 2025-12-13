@@ -7,11 +7,11 @@ export const portfolio = [
     githubLink: "https://github.com/langatAesthetics/langataesthetics",
   },
   {
-    title: "Coming Soon Project",
-    description: "An upcoming project - Stay Tuned!",
-    image: "/images/placeholder.svg",
-    liveLink: "https://langataesthetics.vercel.app",
-    githubLink: "https://github.com/langatAesthetics/langataesthetics",
+    title: "Laundry Business Website",
+    description: "A modern, responsive laundry service website built to help local businesses increase visibility and customer trust. Features a clean UI, service pricing, WhatsApp call-to-action, and a scalable structure for future booking and payment integrations. Optimized for performance, SEO, and mobile users.",
+    image: "/images/urbanwash.png",
+    liveLink: "https://urbanwash-black.vercel.app",
+    githubLink: "https://github.com/langatAesthetics/urbanwash",
   },
    {
     title: "Coming Soon Project",
