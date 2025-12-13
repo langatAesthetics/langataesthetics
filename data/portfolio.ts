@@ -8,7 +8,7 @@ export const portfolio = [
   },
   {
     title: "Laundry Business Website",
-    description: "A modern, responsive laundry service website built to help local businesses increase visibility and customer trust. Features a clean UI, service pricing, WhatsApp call-to-action, and a scalable structure for future booking and payment integrations. Optimized for performance, SEO, and mobile users.",
+    description: "A modern, responsive laundry service website. Features a clean UI and Optimized for SEO.",
     image: "/images/urbanwash.png",
     liveLink: "https://urbanwash-black.vercel.app",
     githubLink: "https://github.com/langatAesthetics/urbanwash",
