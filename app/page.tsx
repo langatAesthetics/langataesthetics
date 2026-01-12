@@ -23,7 +23,7 @@ export default function Home() {
             Hi, I'm Langat
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-900 mb-6">
+          <p className="text-2xl md:text-xl text-gray-900 mb-6">
             I’m a Frontend Developer focused on building fast, accessible, and modern web applications using Next.js, React, and Tailwind CSS.
           </p>
 
@@ -64,44 +64,26 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      
-      <section id="about" className="bg-white px-8 md:px-16 py-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-          {/* Left: Image */}
-          <div className="flex justify-center">
-            <Image
-              src="/images/placeholder.svg" // replace with your actual image
-              alt="Langat Aesthetics"
-              width={400}
-              height={400}
-              className="rounded-sm  object-cover"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Right: Content */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#14213d] mb-4">
-              About Me
-            </h2>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              Duncan Langat, a frontend developer with a software development background, focused on building clean, fast, and user-friendly web applications.
-
-              I work primarily with modern JavaScript frameworks like Next.js and React, paying close attention to performance, accessibility, and scalable UI design.
-
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
-                Systems & Software
-              </span>
-              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
-                Websites
-              </span>
-              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
-                Mobile App
-              </span>
+      <section className="max-w-6xl mx-auto w-full ">
+        <div className="rounded-lg shadow-lg p-6  transition-all duration-300 bg-white/10  backdrop-blur-md border-white/20 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div className="md:col-span-1">
+              <Image
+                src="/images/placeholder.svg" // replace with your actual image
+                alt="Langat Aesthetics"
+                width={400}
+                height={400}
+                className="rounded-sm  object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-2">
+              <h2 className="text-2xl font-bold mb-4">About Me</h2>
+              <p className="mb-6">Duncan Langat, a frontend developer with a software development background, focused on building clean, fast, and user-friendly web applications.</p>
+              <p className="mb-6"> I work primarily with modern JavaScript frameworks like Next.js and React, paying close attention to performance, accessibility, and scalable UI design.</p>
+              <div className="flex justify-end">
+                <a href="/about" className="mb-6 text-[#fca311] underline font-medium hover:text-[#fca311]/80 transition">Learn More About Me</a>
+              </div>
             </div>
           </div>
         </div>
