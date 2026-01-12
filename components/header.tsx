@@ -1,57 +1,67 @@
 "use client";
-import { useState, useEffect } from "react";
 
-const techStacks = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "Supabase",
-  "Node.js",
-];
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Auto-close dropdown 5 seconds after opening
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (open) {
-      timer = setTimeout(() => {
-        setOpen(false);
-      }, 5000); // 5000ms = 5 seconds
-    }
-    return () => clearTimeout(timer); // cleanup if dropdown closes early
-  }, [open]);
+  const navItems = [
+    { name: "About", href: "/#about" },
+    { name: "Education", href: "/#education" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact", href: "/#contact" },
+  ];
 
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
-      {/* Logo */}
-      <div className="text-2xl font-bold cursor-pointer">Langat Aesthetics</div>
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="flex items-center justify-between px-6 md:px-12 py-4">
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-bold text-[#14213d]">
+          LA
+        </Link>
 
-      {/* Tech Stack Dropdown */}
-      <div className="relative">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="font-medium text-[#14213d] hover:text-[#fca311] transition"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Button */}
         <button
-          onClick={() => setOpen(!open)}
-          className="font-medium hover:text-[#fca311] transition"
+          className="md:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle Menu"
         >
-          Tech Stack
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-
-        {/* Dropdown */}
-        {open && (
-          <div className="absolute right-0 mt-2 w-48 bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden z-50">
-            {techStacks.map((tech, idx) => (
-              <div
-                key={idx}
-                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-              >
-                {tech}
-              </div>
-            ))}
-          </div>
-        )}
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-white border-t shadow-lg">
+          <nav className="flex flex-col px-6 py-4 space-y-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="font-medium text-[#14213d] hover:text-[#fca311] transition"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

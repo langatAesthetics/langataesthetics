@@ -24,10 +24,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-900 mb-6">
-            I'm a Frontend Developer. I build modern web applications using Next.js, React, and Tailwind CSS.
-            <Link href="/portfolio" className="text-[#fca311] underline font-medium ">
-              Portfolio →
-            </Link>
+            I’m a Frontend Developer focused on building fast, accessible, and modern web applications using Next.js, React, and Tailwind CSS.
           </p>
 
           <a
@@ -66,89 +63,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="bg-white text-black px-6 md:px-16 py-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#14213d] mb-12 text-center">
-          Projects
-        </h2>
+      {/* About Section */}
+      
+      <section id="about" className="bg-white px-8 md:px-16 py-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project, index) => (
-            <div
-              key={index}
-              className="relative rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="relative w-full h-56">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                  loading="eager" // lazy load below-the-fold images
-                />
-              </div>
+          {/* Left: Image */}
+          <div className="flex justify-center">
+            <Image
+              src="/images/placeholder.svg" // replace with your actual image
+              alt="Langat Aesthetics"
+              width={400}
+              height={400}
+              className="rounded-sm  object-cover"
+              loading="lazy"
+            />
+          </div>
 
-              <div className="p-6 flex flex-col">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-2xl font-semibold text-[#14213d]">
-                    {project.title}
-                  </h3>
+          {/* Right: Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#14213d] mb-4">
+              About Me
+            </h2>
 
-                  <div className="flex space-x-3">
-                    {project.liveLink && (
-                      <a
-                        href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-800 hover:text-[#fca311] transition"
-                        title="View Live Project"
-                      >
-                        <ExternalLink size={22} />
-                      </a>
-                    )}
-                    {project.githubLink && (
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-800 hover:text-[#fca311] transition"
-                        title="View GitHub Repo"
-                      >
-                        <Github size={22} />
-                      </a>
-                    )}
-                  </div>
-                </div>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Duncan Langat, a frontend developer with a software development background, focused on building clean, fast, and user-friendly web applications.
 
-                <p className="text-gray-700 mb-4">{project.description}</p>
+              I work primarily with modern JavaScript frameworks like Next.js and React, paying close attention to performance, accessibility, and scalable UI design.
 
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="text-sm bg-[#e5e5e5] text-[#14213d] px-3 py-1 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
+                Systems & Software
+              </span>
+              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
+                Websites
+              </span>
+              <span className="px-4 py-2 text-sm rounded-full bg-[#e5e5e5] text-[#14213d]">
+                Mobile App
+              </span>
             </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <Link
-            href="/projects"
-            className="px-6 py-3 underline font-semibold text-[#fca311] transition"
-          >
-            See All Projects
-          </Link>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section>
+      <section id="contact">
         <Contact />
       </section>
     </main>
