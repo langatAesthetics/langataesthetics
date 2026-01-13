@@ -23,7 +23,7 @@ export default function Home() {
             Hi, I'm Langat
           </h1>
 
-          <p className="text-2xl md:text-xl text-gray-900 mb-6">
+          <p className=" text-gray-900 mb-6">
             I’m a Frontend Developer focused on building fast, accessible, and modern web applications using Next.js, React, and Tailwind CSS.
           </p>
 
