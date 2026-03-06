@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
 import type { Viewport } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -39,9 +40,26 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="grow">
-        {children}
+          {children}
         </main>
         <SpeedInsights />
+
+        {/* Google Analytics Script */}
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F4N3Q6KLKC"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F4N3Q6KLKC');
+  `}
+        </Script>
         <Footer />
       </body>
     </html>
