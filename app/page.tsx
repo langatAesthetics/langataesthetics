@@ -23,8 +23,8 @@ export default function Home() {
             Hi, I'm Langat
           </h1>
 
-          <p className=" text-gray-900 mb-6">
-            I’m a Frontend Developer focused on building fast, accessible, and modern web applications using Next.js, React, and Tailwind CSS.
+          <p className="text-gray-900 mb-6">
+            I’m a fullstack developer focused on building fast, scalable, and user-friendly web applications — combining clean frontend experiences with robust backend systems using modern technologies like Next.js, React, and Node.js.
           </p>
 
           <a
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="md:col-span-1">
               <Image
                 src="/images/placeholder.svg" // replace with your actual image
-                alt="Langat Aesthetics"
+                alt="Langat Aesthetics Professional Photo"
                 width={400}
                 height={400}
                 className="rounded-sm  object-cover"
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="md:col-span-2">
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
-              <p className="mb-6">Duncan Langat, a frontend developer with a software development background, focused on building clean, fast, and user-friendly web applications.</p>
+              <p className="mb-6">Langat Duncan, a fullstack developer with a software development background, focused on building clean, fast, and user-friendly web applications.</p>
               <p className="mb-6"> I work primarily with modern JavaScript frameworks like Next.js and React, paying close attention to performance, accessibility, and scalable UI design.</p>
               <div className="flex justify-end">
                 <a href="/about" className="mb-6 text-[#fca311] underline font-medium hover:text-[#fca311]/80 transition">Learn More About Me</a>

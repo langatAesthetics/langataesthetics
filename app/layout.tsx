@@ -21,9 +21,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Langat Aesthetics - Portfolio',
-  description: 'I am a Frontend Developer. Explore my projects, skills, and contact me for collaboration.',
-  keywords: ['Portfolio', 'Frontend Developer', 'Next.js', 'React',],
+  title: 'Langat Aesthetics - Personal Website',
+  description: 'I am a Fullstack Developer. Explore my projects, skills, and contact me for collaboration.',
+  keywords: ['Langat Aesthetics', 'Fullstack Developer', 'Javascript', 'Software Developer Kenya', 'Web Developer Kenya' ],
   authors: [{ name: 'Langat', url: 'https://langataesthetics.vercel.app' }],
   icons: {
     icon: '/favicon.ico',

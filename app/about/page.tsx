@@ -11,49 +11,42 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-gray-700 text-lg">
-            Frontend Developer & Digital Problem Solver
+            Fullstack Developer & Digital Problem Solver
           </p>
         </section>
 
         {/* ===== About Content ===== */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="flex justify-center">
-            <Image
-              src="/images/placeholder.svg" // replace if needed
-              alt="Langat Aesthetics"
-              width={420}
-              height={420}
-              className="rounded-xl shadow-lg object-cover"
-              priority
-            />
-          </div>
-
-          {/* Text */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#14213d] mb-4">
-              Hi, I’m Langat
-            </h2>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              I’m a frontend developer with a background in software development
-              and a strong passion for building clean, functional, and
-              user-focused digital experiences.
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              I specialize in translating ideas into well-structured,
-              visually appealing, and high-performance web solutions. My
-              approach combines technical precision with thoughtful design,
-              ensuring every project is scalable, accessible, and easy to use.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed">
-              Beyond writing code, I focus on understanding the purpose behind
-              each product — the users, goals, and real-world problems it solves.
-              This allows me to collaborate effectively and deliver solutions
-              that create real value.
-            </p>
+        <section className="max-w-6xl mx-auto w-full ">
+          <div className="rounded-lg shadow-lg p-6  transition-all duration-300 bg-white/10  backdrop-blur-md border-white/20 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+              <div className="md:col-span-1">
+                <Image
+                  src="/images/placeholder.svg" // replace with your actual image
+                  alt="Langat Aesthetics Professional Photo"
+                  width={400}
+                  height={400}
+                  className="rounded-sm  object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="md:col-span-2">
+                <h2 className="text-2xl font-bold mb-4">Langat Duncan</h2>
+                <p className="mb-6">Fullstack developer with a background in software development,
+                  focused on building clean, scalable, and user-centered digital
+                  solutions.
+                </p>
+                <p className="mb-6">I work across both frontend and backend, combining modern
+                  technologies like Next.js, React, and Node.js to create
+                  high-performance applications that are both functional and visually
+                  refined.
+                </p>
+                <p>
+                  Beyond writing code, I focus on understanding the real-world problem
+                  behind every project — ensuring that each solution is purposeful,
+                  efficient, and delivers measurable value.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -63,23 +56,42 @@ export default function AboutPage() {
             Education
           </h2>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
-            <h3 className="text-xl font-semibold text-[#14213d]">
-              Bachelor’s Degree in Software Development
-            </h3>
-            <p className="text-gray-700 mt-1">
-              KCA University
-            </p>
-            <p className="text-gray-600 text-sm mt-1">
-              2022 – 2026
-            </p>
+          <div className="space-y-6">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold text-[#14213d]">
+                Bachelor’s Degree in Software Development
+              </h3>
+              <p className="text-gray-700 mt-1">
+                KCA University
+              </p>
+              <p className="text-gray-600 text-sm mt-1">
+                2022 – 2026
+              </p>
 
-            <p className="text-gray-700 mt-4 leading-relaxed">
-              My academic journey has provided a strong foundation in
-              programming, systems development, and software engineering
-              principles, complemented by hands-on projects and continuous
-              self-learning.
-            </p>
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                My academic journey has provided a strong foundation in
+                programming, systems development, and software engineering
+                principles, complemented by hands-on projects and continuous
+                self-learning.
+              </p>
+            </div>
+
+            {/* YouTube University */}
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold text-[#14213D]">
+                Continuous Learning (Online Resources)
+              </h3>
+              <p className="text-gray-700 mt-1">
+                Self-directed learning through online resources
+              </p>
+
+              <p className="text-gray-700 mt-4 leading-relaxed">
+                Continuously expanding my skillset through online learning,
+                tutorials, technology documentation and real-world project building. This has played a
+                major role in sharpening my practical development skills and
+                staying up-to-date with modern technologies.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -93,34 +105,34 @@ export default function AboutPage() {
             {[
               {
                 title: "Website Development",
-                desc: "Designing and building responsive, fast, and scalable websites using modern technologies such as Next.js, React, and Tailwind CSS.",
+                desc: "Building responsive, scalable, and high-performance websites using modern frameworks like Next.js and React.",
+              },
+              {
+                title: "Fullstack Development",
+                desc: "Developing complete web applications by integrating frontend interfaces with secure and scalable backend systems.",
               },
               {
                 title: "UX Design",
-                desc: "Creating intuitive user experiences with a strong focus on usability, accessibility, and clear user journeys.",
+                desc: "Designing intuitive and user-friendly experiences with a focus on usability and accessibility.",
               },
               {
                 title: "Graphic Design",
-                desc: "Designing clean visual assets that align with brand identity and enhance digital presentation.",
+                desc: "Creating clean and visually appealing assets aligned with brand identity and digital presence.",
               },
               {
                 title: "Content Writing",
-                desc: "Writing clear, engaging, and purpose-driven content that communicates ideas effectively.",
+                desc: "Crafting clear, engaging, and purpose-driven content that communicates effectively.",
               },
               {
                 title: "Virtual Assistance",
-                desc: "Providing reliable remote support including administrative tasks, research, and digital coordination.",
-              },
-              {
-                title: "Mobile App Development",
-                desc: "I design and develop cross-platform mobile applications that are fast, intuitive, and user-focused.",
+                desc: "Providing reliable remote support including research, organization, and digital coordination.",
               },
             ].map((item, index) => (
               <div
                 key={index}
                 className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
               >
-                <h3 className="text-lg font-semibold text-[#14213d] mb-2">
+                <h3 className="text-lg font-semibold text-[#14213d] mb-2 ">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
