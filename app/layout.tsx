@@ -28,6 +28,22 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+
+  openGraph: {
+  title: "Langat Aesthetics",
+  description: "Fullstack Developer & Software Developer.",
+  url: "https://langataesthetics.vercel.app",
+  siteName: "Langat Aesthetics",
+  images: [
+    {
+      url: "/images/personalwebsite.jpeg", // create this image
+      width: 1200,
+      height: 630,
+    },
+  ],
+  locale: "en_US",
+  type: "website",
+},
 };
 
 export default function RootLayout({
