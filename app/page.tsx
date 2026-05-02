@@ -67,14 +67,13 @@ export default function Home() {
       <section className="max-w-6xl mx-auto w-full ">
         <div className="rounded-lg shadow-lg p-6  transition-all duration-300 bg-white/10  backdrop-blur-md border-white/20 ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-            <div className="md:col-span-1">
+            <div className="relative w-full max-w-[320px] aspect-square overflow-hidden rounded-xl shadow-md">
               <Image
-                src="/images/placeholder.svg" // replace with your actual image
-                alt="Langat Aesthetics Professional Photo"
-                width={400}
-                height={400}
+                src="/images/Langat_Duncan_Software_Developer.webp" // replace with your actual image
+                alt="Langat Duncan Professional Photo"
+                fill
                 className="rounded-sm  object-cover"
-                loading="lazy"
+                loading="eager"
               />
             </div>
             <div className="md:col-span-2">
