@@ -22,10 +22,10 @@ export const portfolio = [
     githubLink: "https://github.com/langatAesthetics/hudumu-web",
   },
   {
-    title: "Coming Soon Project",
-    description: "An upcoming project",
-    image: "/images/placeholder.svg",
-    liveLink: "https://langataesthetics.vercel.app",
-    githubLink: "https://github.com/langatAesthetics/langataesthetics",
+    title: "CarSales",
+    description:     "A modern car marketplace platform that enables users to browse, search, and explore available vehicles through a clean, responsive, and intuitive interface. Designed with a focus on performance, usability, and a seamless browsing experience.",
+    image: "/images/carsales.png",
+    liveLink: "https://carsales-4ew6.vercel.app",
+    githubLink: "https://github.com/langatAesthetics/carsales",
   },
 ];
