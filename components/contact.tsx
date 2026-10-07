@@ -79,10 +79,10 @@ export default function Contact() {
             <div className="flex items-center gap-4">
               <Phone className="text-[#fca311]" />
               <a
-                href="tel:+254780576547"
+                href="tel:+254748831247"
                 className="hover:underline text-gray-800"
               >
-                0780 576 547
+                0748 831 247
               </a>
             </div>
 
